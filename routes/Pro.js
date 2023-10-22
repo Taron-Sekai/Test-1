@@ -11,7 +11,7 @@ router.get('/',async(req,res)=>{
         const item = await product.find(req.body)
         res.json(item)
     } catch (error) {
-        res.status(500).json({message:message.error})
+        console.log("get didint work")
     }
 })
 router.post('/',async(req,res)=>{
